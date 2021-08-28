@@ -1,0 +1,101 @@
+.chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chart > div {
+    width: 49%;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .chart > div {
+        width: 100%;
+    }
+}
+
+/* ===== */
+
+main {
+    width: calc(100% - 4rem);
+    margin: 2rem auto;
+}
+
+.summary {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    width: 360px;
+}
+
+.summary li {
+    border-right: 1px solid #ccc;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmed h3,
+.confirmed h4 {
+    color: rgb(235, 83, 116);
+}
+
+.recovered h3,
+.recovered h4 {
+    color: rgb(86, 115, 235);
+}
+
+.deaths h3,
+.deaths h4 {
+    color: rgb(70, 77, 82);
+}
+
+.summary li:nth-last-child(1) {
+    border-right: none;
+    padding-right: 0;
+}
+
+.summary li h4:nth-of-type(1) {
+    color: black;
+}
+
+sub {
+    margin: 1rem 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+th p {
+    cursor: pointer;
+}
+tr {
+    height: 119px;
+}
+tr:nth-child(1) {
+    height: fit-content;
+}
+td {
+    text-align: right;
+}
+td:nth-child(1) {
+    text-align: left;
+}
+
+.world_confirmed {
+    color: rgb(235, 83, 116);
+}
+.world_recovered {
+    color: rgb(86, 115, 235);
+}
+.world_deahs {
+    color: rgb(70, 77, 82);
+}
